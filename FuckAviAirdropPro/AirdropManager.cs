@@ -69,14 +69,15 @@ namespace FuckAviAirdropPro
                 
                 if (ai.Delay > 0)
                     continue;
-
-                Transform t;
+                
 
                 if (ai.Type != AirdropType.Vehicle)
                 {
-                    t = ((GameObject) Instantiate(Resources.Load("Level/Carepackage_Server"))).transform;
+                    //TODO: Test against newer Unturned
+                    
+                    Transform t = Instantiate(new MasterBundleReference<GameObject>("core.masterbundle", "Level/Dropship.prefab").loadAsset(true)).transform;
 
-                    t.name = "Carepackage";
+                    t.name = "Dropship";
                     t.parent = Level.effects;
                     t.position = ai.State;
                     t.rotation = Quaternion.identity;
@@ -297,7 +298,7 @@ namespace FuckAviAirdropPro
             {
                 
                 VehicleAsset va = (VehicleAsset)Assets.find(EAssetType.VEHICLE, (ushort)v.id);
-                if (va.vehicle.transform.FindChild("Buoyancy") == null)
+                if (va.engine == EEngine.BOAT) //TODO: Find a better replacement, temporary fix
                     if (WaterUtility.isPointUnderwater(airdropPos) && !cf.AllowDropInWater)
                         continue;
                 

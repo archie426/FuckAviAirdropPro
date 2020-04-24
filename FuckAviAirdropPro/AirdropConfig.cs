@@ -87,7 +87,7 @@ namespace FuckAviAirdropPro
             BroadcastAirdrop = false;
             BroadcastAirdropColor = "red";
             BroadcastVehicleAirdrop = false;
-            BroadcastVehicleAirdropColor = "red";;
+            BroadcastVehicleAirdropColor = "red";
             VanillaDropWeight = 1;
             CustomDropWeight = 1;
             RandomDropWeight = 1;
