@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\DefCon42\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_FuckAviAirdropPro.3103460.00" t="ExcludeRecursive" />
-    <e p="C:\Users\DefCon42\Documents\FuckAvi\FuckAviAirdropPro\FuckAviAirdropPro" t="IncludeRecursive">
+    <e p="C:\Users\archi\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\archi\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_FuckAviAirdropPro.-64782061.00" t="ExcludeRecursive" />
+    <e p="D:\Libraries\Projects\FuckAviAirdropProYes\FuckAviAirdropPro" t="IncludeRecursive">
       <e p="AirdropConfig.cs" t="Include" />
       <e p="AirdropManager.cs" t="Include" />
       <e p="AirdropOverride.cs" t="Include" />

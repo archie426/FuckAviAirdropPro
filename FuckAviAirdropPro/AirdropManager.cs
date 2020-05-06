@@ -298,7 +298,7 @@ namespace FuckAviAirdropPro
             {
                 
                 VehicleAsset va = (VehicleAsset)Assets.find(EAssetType.VEHICLE, (ushort)v.id);
-                if (va.engine == EEngine.BOAT) //TODO: Find a better replacement, temporary fix
+                if (va.engine != EEngine.BOAT) //TODO: Find a better replacement, temporary fix
                     if (WaterUtility.isPointUnderwater(airdropPos) && !cf.AllowDropInWater)
                         continue;
                 
